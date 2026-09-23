@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width,
+               initial-scale=1.0">
+
+<title>
+AI Data Scientist Report
+</title>
+
+<style>
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background: #f4f6f8;
+
+    color: #202124;
+}
+
+.container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px;
+}
+
+header {
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.08);
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+section {
+    background: #ffffff;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.06);
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(180px, 1fr)
+        );
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.card {
+    background: #f7f9fb;
+
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.card span {
+    display: block;
+
+    color: #666;
+
+    margin-bottom: 8px;
+}
+
+.card strong {
+    font-size: 28px;
+}
+
+.info-box {
+    background: #f1f7ff;
+
+    border-left: 5px solid #4285f4;
+
+    padding: 15px 20px;
+
+    border-radius: 6px;
+}
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+    border-bottom:
+        1px solid #ddd;
+
+    padding: 10px;
+
+    text-align: left;
+}
+
+.data-table th {
+    background: #f5f5f5;
+}
+
+.summary-list {
+    line-height: 2;
+}
+
+.footer {
+    text-align: center;
+
+    color: #777;
+
+    padding: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+AI Data Scientist Report
+</h1>
+
+<p>
+Automatically generated analysis report
+</p>
+
+<p>
+Generated:
+2026-09-23 12:40:46
+</p>
+
+</header>
+
+
+        <section>
+
+            <h2>Analysis Summary</h2>
+
+            <ul class="summary-list">
+
+                <li>
+                    Rows:
+                    <strong>
+                        10
+                    </strong>
+                </li>
+
+                <li>
+                    Columns:
+                    <strong>
+                        8
+                    </strong>
+                </li>
+
+                <li>
+                    Target:
+                    <strong>
+                        id
+                    </strong>
+                </li>
+
+                <li>
+                    Problem Type:
+                    <strong>
+                        classification
+                    </strong>
+                </li>
+
+                <li>
+                    Best ML Model:
+                    <strong>
+                        None
+                    </strong>
+                </li>
+
+            </ul>
+
+        </section>
+        
+
+
+        <section>
+            <h2>Dataset Overview</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <span>Rows</span>
+                    <strong>10</strong>
+                </div>
+
+                <div class="card">
+                    <span>Columns</span>
+                    <strong>8</strong>
+                </div>
+
+                <div class="card">
+                    <span>Missing Values</span>
+                    <strong>0</strong>
+                </div>
+
+                <div class="card">
+                    <span>Duplicate Rows</span>
+                    <strong>0</strong>
+                </div>
+
+            </div>
+
+            <h3>Columns</h3>
+
+            <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Column</th>
+      <th>Data Type</th>
+      <th>Missing</th>
+      <th>Unique Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>int64</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>first_name</td>
+      <td>str</td>
+      <td>0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>str</td>
+      <td>0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>str</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>age</td>
+      <td>int64</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>str</td>
+      <td>0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>salary</td>
+      <td>float64</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>joined</td>
+      <td>str</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+        </section>
+        
+
+
+        <section>
+
+            <h2>Problem Definition</h2>
+
+            <div class="info-box">
+
+                <p>
+                    <strong>Target column:</strong>
+                    id
+                </p>
+
+                <p>
+                    <strong>Problem type:</strong>
+                    classification
+                </p>
+
+            </div>
+
+        </section>
+        
+
+
+        <section>
+
+            <h2>Data Quality</h2>
+
+            <h3>Missing Values</h3>
+
+            <p>No data available.</p>
+
+            <h3>Outliers</h3>
+
+            <p>No data available.</p>
+
+            <p>
+                Duplicate rows detected:
+                <strong>
+                    0
+                </strong>
+            </p>
+
+        </section>
+        
+
+
+        <section>
+
+            <h2>Machine Learning</h2>
+
+            <div class="info-box">
+
+                <p>
+                    <strong>Best model:</strong>
+                    None
+                </p>
+
+                <p>
+                    <strong>Training mode:</strong>
+                    auto
+                </p>
+
+            </div>
+
+            <h3>Model Comparison</h3>
+
+            <p>No data available.</p>
+
+        </section>
+        
+
+
+        <section>
+
+            <h2>Training Details</h2>
+
+            <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Status</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logistic Regression</td>
+      <td>Failed</td>
+      <td>'LogisticRegression' object is not subscriptable</td>
+    </tr>
+    <tr>
+      <td>Decision Tree</td>
+      <td>Failed</td>
+      <td>'DecisionTreeClassifier' object is not subscriptable</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>Failed</td>
+      <td>'RandomForestClassifier' object has no attribute 'estimators_'</td>
+    </tr>
+    <tr>
+      <td>Gradient Boosting</td>
+      <td>Failed</td>
+      <td>'GradientBoostingClassifier' object has no attribute 'estimators_'</td>
+    </tr>
+  </tbody>
+</table>
+
+        </section>
+        
+
+<div class="footer">
+
+AI Data Scientist Agent
+
+</div>
+
+</div>
+
+</body>
+
+</html>

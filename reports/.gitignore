@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Uploaded datasets
+uploads/*
+!uploads/.gitkeep
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Generated reports
+reports/generated/
+
+# Model files
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.keras
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
